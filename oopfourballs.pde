@@ -9,4 +9,23 @@ class Circle
     }
   }
 }
+//anotherfile
+Circle circle=new Circle();
+void setup()
+{
+  size(640,640);
+ }
+ int x,y=75;
+ int count=1;
+ void draw()
+ {
+  x=15;
+  while(count<5)
+  {
+    circle.duplicates(x,y);
+    y=y+100;
+    count=count+1;
+    }
+    }
+    
     
