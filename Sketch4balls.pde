@@ -1,21 +1,23 @@
 void setup()
 {
-  size(450,450);
+  size(640,640);
 }
-int x=15;
-int h=75;
-int c=1;
+float xcoordinate=15,ycoordinate=640;
+float ball_1x=xcoordinate,ball_2x=xcoordinate,ball_3x=xcoordinate,ball_4x=xcoordinate;
 void draw()
 {
-  while(c<5)
-  {
-    x=15;
-    while(x<450)
-    {
-  ellipse(x,h,25,25);
-  x=x+15;
-    }
-    c=c+1;
-    h=h+75;
-  }
+  ellipse(ball_1x,ycoordinate/6,10,10);
+  ball_1x+=1;
+  
+  ellipse(ball_2x,ycoordinate/3,10,10);
+  ball_2x+=2;
+  
+  ellipse(ball_3x,ycoordinate/2,10,10);
+  ball_3x+=3;
+  
+  ellipse(ball_4x,ycoordinate/1.5,10,10);
+  ball_4x+=4;
+   
+
+    
 }
